@@ -1,3 +1,5 @@
+# Developed by linkedin.com/in/alfonso-barrera-mora-52684393
+
 from flask import Flask,request, abort, send_file, escape, render_template, session, redirect, url_for, flash, Markup, json
 import sqlite3
 import json
@@ -14,7 +16,7 @@ from flask_bcrypt import Bcrypt
 
 app = Flask(__name__) #Flask object
 #mysql://username:password@server/db #Connection String
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://pi:pi@raspberry/rms'   #mysql cnf
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://pi:pi@192.168.1.106/rms'   #mysql cnf
 app.config['SQLALCHEMY_DATABASE_URI'] =SQLALCHEMY_DATABASE_URI                      #mysql cnf
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///rms.sqlite3' #sqlite configuration
 app.config['SECRET_KEY'] = "random string"
