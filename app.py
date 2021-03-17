@@ -497,5 +497,5 @@ def addNewProject(appid):
 if __name__=="__main__":
 	#app.secret_key=os.urandom(32) #Needed for HTTPS
 	db.create_all()
-	app.run(host='0.0.0.0', debug = True, port=80)
+	app.run(host='0.0.0.0', debug = True, port=5000)
 	#app.run(ssl_context='adhoc', host='0.0.0.0', port=5000)
