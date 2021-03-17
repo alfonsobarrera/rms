@@ -16,7 +16,7 @@ from flask_bcrypt import Bcrypt
 
 app = Flask(__name__) #Flask object
 #mysql://username:password@server/db #Connection String
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://pi:pi@192.168.1.106/rms'   #mysql cnf
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://rms:rms.password@localhost/rms'   #mysql cnf
 app.config['SQLALCHEMY_DATABASE_URI'] =SQLALCHEMY_DATABASE_URI                      #mysql cnf
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///rms.sqlite3' #sqlite configuration
 app.config['SECRET_KEY'] = "random string"

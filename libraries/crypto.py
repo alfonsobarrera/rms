@@ -23,10 +23,3 @@ class Security:
         else:
             return False
     
-
-def testFunction():
-    ahash,salt=Security().getHash("xoxoincubus")
-    print ahash,salt
-    r=Security().checkHash("xoxoincubus", ahash, salt)
-    print r
-#testFunction()
